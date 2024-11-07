@@ -13,6 +13,7 @@ class BankAccount:
     def check_balance(self):
         print(f'Баланс по счету составляет {self.__balance} MNT')
 
+
 myacc = BankAccount()
 
 myacc.deposite(15000)
