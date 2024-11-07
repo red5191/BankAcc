@@ -4,7 +4,7 @@ class BankAccount:
 
     def set_balance(self, deposit, withdraw):
         try:
-            if deposit > 0 and withdraw > 0:
+            if deposit >= 0 and withdraw >= 0:
                 self.__balance += float(deposit)
                 print(f'Счет пополнен на {deposit} MNT')
                 if withdraw < self.__balance:
